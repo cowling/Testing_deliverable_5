@@ -31,6 +31,7 @@ public class TicTacToeBoardPrinter {
   }
 
   private void printRow(int row, GameBoard board) {
+	  if(printStream == null) System.out.println("ps null");
     printStream.printf("%s|%s|%s\n", markToString(board.getMark(row, 0)),
         markToString(board.getMark(row, 1)), markToString(board.getMark(row, 2)));
   }
